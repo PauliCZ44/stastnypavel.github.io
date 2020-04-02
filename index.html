@@ -1,73 +1,251 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Blog</title>
-    </head>
-    <style>
-    body {
-	background-color: rgb(0,10,25) ;
-	color: White;
-}
-    h1 {
-        background-color:yellow;
-        color:red;
-        letter-spacing: 60;
-    }
-    li{
-	text-align: center;
-	color: rgb(255, 0, 0);
-	font-weight:bold;
-}
-    .obsah{
-      color: yellow;
-      font-size: 0.8em;
-      
-    }
-    p {
-        	font-family: serif;
-	font-size: larger;
-	font-style: normal;
-	font-variant: normal;
-    }
-    
-    #obsah-nadpis{
-        text-align: center;
-	    color: rgb(255, 0, 0);
-	    font-weight:bold;
-	    font-size:2em;
-	    font-style:Arial;
-    }
-    </style>
-    
-    <body>
-        
-        <h1 id="H1">Pauli's blog</h1>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <title>Pavel Šťastný</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-        <h3 id="obsah-nadpis">Contents</h3>
-        <ul>
-            <li> My first post! <a class="obsah" href="#First-post">GO</a></li>
-            <li> Second post! <a class="obsah" href="#Second-post">GO</a></li>
-            <li> Third nad last post! <a class="obsah" href="#Third-post">GO</a></li>
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Sen&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: Stanley
+    Template URL: https://templatemag.com/stanley-bootstrap-freelancer-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!-- Static navbar -->
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container" >
+      <div class="navbar-header" >
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"  >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="index.html">Pavel Šťastný</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#kdo-jsem">O mně</a></li>
+          <li><a href="work.html">Moje projekty</a></li>
+          <li><a href="blog.html">Pivní blog</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
         </ul>
-        
-        <h2 id="First-post">First post</h2>
-        <h6>Posted on some date in some year</h6>
-        
-        <p>Something excited happened. Semantics is not new to HTML5. Web designers have always had a degree of control of what the bots did and didn't judge significant. For example, anything in h1 tags has been considered more important than something in say tags, but HTML5 takes semantics to a whole new level.
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
 
-One of the biggest changes in HTML5 over previous versions is the addition of the new "section" elements: header, nav, article, footer, aside and section. To site visitors they work the same as div tags (which we study next, followed by the section elements), but, like b, div is semantically neutral. The new section elements give meaning to their content. This hypertext is not same class as those in contents = <a href="#H1"> go back</a></p>
-        
-        <h2 id="Second-post">Second post</h2>
-        <h6>Posted on some date in some year</h6>
-        
-        <p>Something excited happened. There is no need to wait to take advantage of HTML5 semantics, even if it is a bit vague. You can use the strong and b elements (in strong tags) as I suggest and adopting the new section elements now will make your sites forward compatible for years to come. With one small caveat (see below ***), the new section elements are compatible with all modern browsers. This hypertext is not same class as those in contents = <a href="#H1">go back</a></p>
-        
-        <h2 id="Third-post">Last post</h2>
-        <h6>Posted on some date in some year</h6>
-        
-        <p>Something excited happened. This hypertext is not same class as those in contents = <a href="#H1">go back</a></p>
-        
-        
-    </body>
+  <!-- +++++ Welcome Section +++++ -->
+  <div id="ww">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 centered">
+          <img id="profilovy-obrazek"src="img/user.png" alt="Pavel">
+          <h1>Ahoj, já jsem Pavel.</h1>
+          <h4>Vítejte ne mém webu :)</h4>
+          <p>
+             Tento web by měl sloužit jako malá prezentace o mně a taky jako moje malé testovací prostředí. </p>
+        </div>
+        <!-- /col-lg-8 -->
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /ww -->
+
+  <!-- +++++ Information Section +++++ -->
+
+  <div class="container pt " style="padding-bottom: 0px;" >      <!-- style="border-bottom: 4px solid #264de4;"-->
+    <h3 id="kdo-jsem" class="row mt centered" style="margin: 0px 0px 0px 0px;">Kdo jsem?</h3>
+    <div class="row mt centered">
+      <div class="col-lg-12 col-md-12">
+        </span> <span class="glyphicon glyphicon-education"></span>
+        <h4>Ekonom</h4>
+        <p class="do-bloku" id="muni-pozadi">Vystudoval jsem ekonomii na ekonomicko-správní fakultě Masarykovy Univerzity. Školu jsem dokončil v lednu roku 2020.
+          Můj univerzitní profil si můžete prohlédnout <a href="https://is.muni.cz/osoba/433999" target="_blank">tady</a>.
+          Mezi nejdůležitější absolvované předměty na ESF MU řadím: Mikroekonomie 1/2, Makroekonomie 1/2,
+          Statistika 1/2, Ekonometrie, Finanční trhy, Teorie her, Dějiny ekonomických teorií 1/2.
+          Proč právě tyto předměty? Všechny učí člověka myslet jinak než je zvyklý. Například při řešení problému v teorii her musíte myslet jako protihráč.
+          Např. v mikroekonomii se rozohodováním rozumí čistá racionalita, zaměřená na valstní užitek, přičemž všechno ostatní (emoce) jde stranou.
+          Víme, že člověk takto nemyslí, že pojem <i><a href="https://encyklopedie.soc.cas.cz/w/Homo_oeconomicus" target="_blank">homo economicus</a></i > se nedá aplikovat na každého.
+        </p>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <span class="glyphicon glyphicon-user"></span>
+        <h4>Tester SW</h4>
+        <p  class="do-bloku">Momentálně pracuji jako tester webové aplikace v menší firmě. Pracujeme na vývoji ekonomického softwaru (účetnictví, finance, mzdy atd.).
+           Já hledám chyby, testuju novinky, opravy, zpracovávám požadavky klientů. Moje práce spočívá hlavně v manuálním testování.
+           Sám si vytvářím testovací scénáře a podle nich testuju v aplikaci. Více o náplni mé práce Vám prozradím v mém CV. Ke stažení je v <a href="#footer">této</a> sekci.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6" >
+        <span class="glyphicon glyphicon-fire"></span>
+        <h4>Nadšenec do IT technologií</h4>
+        <p  class="do-bloku">Práce s počítačem je můj denní chléb. Proto je pro mně důležité udržovat si přehled v technologiích a vědět co je zrovna "in",
+          co se kde používá a taky umět nějakou tu technologii využít.
+           Jelikož jsem studoval ekonomickou školu, v IT se vzdělávám hlavně jako samouk. Více <a href="#technologie">zde</a>.  Když jsem nastupoval na univerzitu, přihlásil jsem se na obor <i>Podniková informatika</i>. Hned v prvním semestru mě čekal Úvod do programování v C.
+           Nějak jsem zvládl <i>Hello world!</i> a pak už to šlo ráz naráz. Kalkulačka, bludiště, cykly, náznak první hry. Programování mě bavilo a proto jsme se k němu vracel i po dokončení školy. Tak nějak se z ekonoma zrodil nadšenec do IT. </p>
+      </div>
+
+      <div class="col-lg-4 col-md-12" >
+        <span class="glyphicon glyphicon-grain"></span> <span  class="glyphicon glyphicon-plus"  id="glyphiconPlus" ></span>  <span class="glyphicon glyphicon-tint"></span>
+        <h4>Homebrewer</h4>
+        <p  class="do-bloku" id="cech-pozadi"> <italic>Neboli domovařic, pivovarník či domácí sládek. </italic> Všechna tato synonyma mají jediný význam: jako koníček si vařím doma vlastní pivo.
+          V malém bytě se to může zdát jako nemožné, ale není. Baví mě experimentovat a objevovat stále nové chutě. Kombinovat chmel, slad a kvasnice.
+          Mám rád to překvapení při otevření první láhve nové várky.
+          Baví mě celý technologický proces výroby piva.
+          Mám rád když po mé práci vznikne hmatatelný výsledek. V tomto případě tekutý :)
+
+         </p>
+      </div>
+    </div>
+    <!-- /row -->
+
+    <div class="col-lg-12" id="oddelovac">    </div>
+    <div class="row mt">
+      <div class="col-lg-4 col-md-12">
+        <h4>Co říkám o sobě? </h4>
+        <p>Jsem člověk, který se na sobě snaží neustále pracovat, získávat zkušenosti, stále se vzdělávat a pořád se učit novým věcem.
+          Jsem zvědavý a lákají mě neznámé věci. Věřím že "Knowledge is power". Rád zkouším věci na vlastní kůži. Nejsem extrovert ale ani nejsem 100% introvert, spíš od každého něco. Mezi moje zájmy patří kromě jiných hlavně sport, například fotbal, rocková hudba, a taky čtení chytrých knih. </p>
+        <p>Pocházím z malé valašské vesnice jménem Prlov, blízko u Vizovic. Kvůli studiu vysoké školy jsem se přestěhoval do Brna.
+          Po dokončení školy jsem v Brně také zůstal. Bydlím se svou přítelkyní v menším bytě v Králově Poli.</p>
+      </div>
+      <!-- /colg-lg-6 -->
+
+      <div class="col-lg-4 col-sm-6">
+        <ul class="list-group">
+            <li class="list-group-item"><h4 class="centered">Jaké měkké dovednosti mám?</h4></li>
+        <li class="list-group-item"><strong>Týmová spolupráce</strong> - víc hlav víc ví</li>
+        <li class="list-group-item"><strong>Efektivní komunikace</strong>- mluviti stříbro mlčeti zlato</li>
+        <li class="list-group-item"><strong>Samostatnost</strong> - nejprve řeším problémy sám</li>
+        <li class="list-group-item"><strong>Smysl pro detail</strong> - detaily tvoří celek proto jsou důležité</li>
+        <li class="list-group-item"><strong>Kreativita</strong> - volnost při tvoření věcí je pro mě významná</li>
+        <li class="list-group-item"><strong>Organizační dovednosti</strong> - nejprve musí člověk organizovat sebe</li>
+        </ul>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+        <ul class="list-group">
+        <li class="list-group-item"><h4 class="centered">A co "tvrdé" dovednosti?</h4></li>
+        <li class="list-group-item"><strong>Gretl</strong> - ekonomická analýza dat</li>
+        <li class="list-group-item"><strong>MoneyS3</strong> - účetní software</li>
+        <li class="list-group-item"><strong>HTML/CSS/JS</strong> - nástroje pro tvorbu webu</li>
+        <li class="list-group-item"><strong>SQL</strong> - základní znalosti databází a dotazů</li>
+        <li class="list-group-item"><strong>Angličtina</strong> - na úrovni C1</li>
+        <li class="list-group-item"><strong>Francouzština</strong> - na úrovni B1</li>
+        </ul>
+
+      </div>
+      <!-- /col-lg-6 -->
+    </div>
+    <!-- /row -->
+    <div class="col-lg-12" id="oddelovac2">    </div>
+  </div>
+  <!-- /container -->
+
+  <!-- +++++ Projects Section +++++ -->
+
+  <div id="technologie" class="container pt" style="padding-top: 50px;">
+    <h3 class="row mt centered">Při své práci a jako samouk jsem si osvojil tyto technologie:</h3>
+    <div class="row mt centered">
+
+      <div class="col-md-4">
+        <img id="portfolio-obrazek" class="img-responsive" src="img/portfolio/HTML5.png" alt="ikona HTML5" /></a>
+        <p class="do-bloku">Umím něco nakódovat v HTML5. Neumím všechny tagy nazpaměť, ale co nevím to si umím najít. Základy HTML jsem se naučil při vytváření svých prvnách webových stránek s pomocí webu ITnetwork.cz. Rozšiřování znalostí už šlo ruku v ruce se studiem CSS</p>
+      </div>
+      <div class="col-md-4">
+        <img id="portfolio-obrazek" class="img-responsive" src="img/portfolio/CSS3.png" alt="ikona CSS3" /></a>
+        <p class="do-bloku">V CSSku zvládnu nastylovat základní věci, na ty sloužitější věci si najdu přesný postup nebo použiju šablonu. Většinou využívám W3Schools.com.
+          Snažím se prokousat k bootstrapu, který je použitý i na této stránce. Dokumentaci čerpám z getbootstrap.com nebo také z W3Schools.com</p>
+      </div>
+      <div class="col-md-4">
+        <img id="portfolio-obrazek" class="img-responsive" src="img/portfolio/JS.png" alt="ikona Javascriptu" /></a>
+        <p class="do-bloku">JavaScript jsem se naučil na KhanAcademy, v základním a pokročilém kurzu na jejich stránkách.
+          V jejich tutoriálu se využívá i knihovna processing.js. S pomocí této knihovny a s využitím znalostí získaných z
+          tutoriálu jsem naprogramoval svoji první malou hru. Tento projekt můžete najít v sekci <a href="work.html">Moje projekty</a>.</p>
+      </div>
+    </div>
+  </div>
+  <!-- /container -->
+
+
+
+  <!-- +++++ Footer Section +++++ -->
+
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+    <!--    <div class="col-lg-4">
+          <h4>My Bunker</h4>
+          <p>
+            Some Address 987,<br/> +34 9054 5455, <br/> Madrid, Spain.
+          </p>
+        </div> -->
+        <!-- /col-lg-4 -->
+
+        <div class="col-lg-6 col-sm-6 col-xs-6">
+          <h4 id="kontakt">Odkazy</h4>
+          <p>
+            <a href="https://www.facebook.com/pavel.stastny.9" target="_blank"> <img class="SSicon"src="img/FBlogo.png"  alt="FB-Icon"></a><a href="https://www.facebook.com/pavel.stastny.9"> Facebook  </a><br>
+              <a href="https://is.muni.cz/osoba/433999" target="_blank"> <img class="SSicon"src="img/muni.jpg"  alt="Muni-Icon"></a><a href="https://is.muni.cz/osoba/433999"> IS MUNI</a><br>
+            <a href="https://www.linkedin.com/in/pavel-stastny-155539150" target="_blank"> <img class="SSicon" src="img/INlogo.png" alt="IN-Icon"></a><a href="https://www.linkedin.com/in/pavel-stastny-155539150"> LinkedIn</a>   <br><br>
+            Moje CV: <a href="Životopis2020.pdf" download="PavelŠťastný" target="_blank"> DOWNLOAD! </a><br>
+             <span class="glyphicon-envelope"></span> &#115;<!-- >totojeblblej@seznam.cz -->&#116;&#97;&#115;<!-- >ahhjh@sdf.sdc -->&#116;&#110;&#121;&#112;<!-- >@. -->&#64;<!-- >wdadsa@ssasd.cz -->&#115;&#101;&#122;<!-- >@. -->&#110;&#97;<!-- >@. -->&#109;&#46;<!-- >@. -->&#99;<!-- >@. -->&#122;
+          </p>
+        </div>
+        <!-- /col-lg-4 -->
+
+        <div class="col-lg-6 col-sm-6 col-xs-6">
+          <h4>O této stránce</h4>
+          <p>Tuto prezentační stránku jsem začal vytvářet 01.04.2020. Vznikla kvůli tomu, abych si vyzkoušel vytvořit první web,
+            umístit ho na internet atd. Je vytvořená pomocí HTML/CSS technologie s malým využitím bootstrap frameworku.
+            </p>
+        </div>
+        <!-- /col-lg-4 -->
+      </div>
+    </div>
+  </div>
+
+  <div id="copyrights">
+    <div class="container" >
+      <p>
+        &copy; Copyright 2020  Pavel Šťastný.  All Rights Reserved.  Created with Stanley template by TemplateMag
+      </p>
+      </div>
+    </div>
+  </div>
+  <!-- / copyrights -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
 </html>
