@@ -6,7 +6,7 @@
   * For more info and help: https://templatemag.com/php-mail-form/
   */
 
-  if(isset($_POST['submit']})){
+  if (isset($_POST['submit']})) {
       $name = $_POST['name'];
       $subject = $_POST['subject'];
       $mailFrom = $_POST['mail'];
@@ -17,7 +17,7 @@
       $txt = "You have received an e-mail from ".$name.".\n\n".$message;
 
       mail($mailTo, $subject, $txt, $headers);
-      header("Loactin: index.php?mailsend");
+      header("Location: contact.html?mailsend");
   }
 
   /*
