@@ -153,6 +153,34 @@
           size(400, 400);
           frameRate(30);
 
+          var canvas = document.getElementById("canvas");
+          var processing = new Processing(canvas, function(processing) {
+            processing.size(400, 400);
+            processing.background(0xFFF);
+
+            var mouseIsPressed = false;
+            processing.mousePressed = function () { mouseIsPressed = true; };
+            processing.mouseReleased = function () { mouseIsPressed = false; };
+
+            var keyIsPressed = false;
+            processing.keyPressed = function () { keyIsPressed = true; };
+            processing.keyReleased = function () { keyIsPressed = false; };
+
+            function getImage(s) {
+             var url = "https://www.kasandbox.org/programming-images/" + s + ".png";
+             processing.externals.sketch.imageCache.add(url);
+             return processing.loadImage(url);
+           }
+
+           // use degrees rather than radians in rotate function
+           var rotateFn = processing.rotate;
+           processing.rotate = function (angle) {
+               rotateFn(processing.radians(angle));
+           };
+
+           with (processing) {
+
+
           // ProgramCodeGoesHere
           // this will be copy if "fishy" game, where you are bron as a small fish, and have to eat smaller fish to grow. If you try to eat bigger fish you die.
           // HOW TO PLAY:
@@ -238,7 +266,7 @@
           if (this.x < Enemy.x + Enemy.size*0.7 && this.x + this.size*0.7 > Enemy.x && this.y < Enemy.y + Enemy.size*0.7 && this.y + this.size*0.9 > Enemy.y) {
 
               if (this.size > Enemy.size){
-              playSound(getSound("rpg/battle-swing"));
+            //  playSound(getSound("rpg/battle-swing"));
               var riskadd = Enemy.size/this.size;
               Score = Score +floor((floor(random(1,3))+round(Enemy.size*random(0.8,1.2)))*riskadd*2);
               this.size = this.size+0.2*difficulty+(Enemy.size/this.size)*0.5;  // growing = 0.1 +
@@ -256,7 +284,7 @@
               } else {  //was eaten - die
                       LosingSizeEnemy =(round((100*Enemy.size)))/100;      //info for losing screen
                       LosingSizePlayer = (round((100*this.size)))/100;    //info for losing screen
-                      playSound(getSound("rpg/hit-splat"));
+                      //playSound(getSound("rpg/hit-splat"));
                       this.size = 0.000001;   //disapearing of player
                       this.x = 0;             //disapearing of player
                       this.y=0;               //disapearing of player
