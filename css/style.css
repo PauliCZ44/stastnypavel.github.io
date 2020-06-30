@@ -1,10 +1,6 @@
-/**
-* Template Name: Stanley
-* Template URL: https://templatemag.com/stanley-bootstrap-freelancer-template/
-* Author: TemplateMag.com
-* License: https://templatemag.com/license/
-*/
+
 #profilovy-obrazek {
+  box-sizing: border-box;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -34,6 +30,7 @@
   backface-visibility: hidden;
 }
 
+
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -45,7 +42,10 @@
 }
 
 #portfolio-obrazek-work:hover{
-  opacity: 0.3;
+  opacity: 0.8;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px 1px black;
+  transition: all 0.4s ease-out;
 }
 
 #portfolio-obrazek-work:hover .ZKUSTO {
