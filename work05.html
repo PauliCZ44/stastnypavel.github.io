@@ -22,7 +22,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-
+  <link href="css/style_JSProjects.css" rel="stylesheet">
 
 </head>
 
@@ -56,72 +56,57 @@
   <div class="container pt">
     <div class="row mt">
       <div class="col-lg-6 col-lg-offset-3 centered">
-        <h2>Moje projekty</h2>
+        <h1>Palindrom checker</h1>
         <hr>
-        <p>V této části se můžete podívat na některé moje projekty. Některé jsou cvičné, některé se dají považovat za 100% fungující tak jak bylo zamýšleno.</p>
+       
       </div>
     </div>
-    <div class="row mt centered ">
-      <div class="col-lg-6 extra-margin">
-        <h3>Hra - Fluffy</h3>
-        <a href="work01.html"><img class="img-responsive" id="portfolio-obrazek-work"src="img/portfolio/fluffy.png" alt=""/></a>
-        <p>Zde dávám <a href="https://www.khanacademy.org/computer-programming/game-fluffy-v-101/6420882916130816" target="_blank"> odkaz  </a>  na moji 1. malou hru i se zdrojovým kódem. Hru jsem vytvořil pomocí JavaScriptu a s využitím knihovny ProcessingJS</p>
+    <div class="row mt centered">
+      <div class="col-lg-8 col-lg-offset-2">
+      <p class="desc">Palindrom (z řec. palindromos, běžící pozpátku) je slovo, věta, číslo nebo melodie (obecně jakákoliv sekvence symbolů), která má tu vlastnost, že ji lze číst v libovolném směru (zprava doleva nebo zleva doprava) a má vždy stejný význam. Při posuzování, zda se jedná o stejný význam, se obvykle neberou v úvahu mezery mezi slovy a diakritika (je-li použita). Příkladem palindromu je slovo "Anna" nebo i věta "Kobyla má malý bok". Zdroj: <a href="https://cs.wikipedia.org/wiki/Palindrom">wikipedia</a></p>
+      <p class="desc">A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward, such as madam, racecar. Source: <a href="https://en.wikipedia.org/wiki/Palindrome">wikipedia</a></p>  
+      <p>
+        <form>   
+        <label id="text-to-check" for="text" > Please insert your wod here: <br> Prosím, zadejte vaše slovo níže:</label>
+        
+        <input type="text" name="text" placeholder="Enter your text here and find out if your word is a palindrom" class="form-control form-control-lg" id="palidromeCheck" required>   
+        <input type="button" value="CHECK !" class="btn btn-primary btn-lg" onclick='checkStr();'>
+        </form>
+        <p id="error"></p>
+        <p id="result">Your word <span id=resultWord></span><span id=resultState> not </span> a palindrom! <br> And its backward version is: <br> <span id=resultWordBacwards></span>  </p>
+                   <!-- state = IS  / IS NOT -->
+        </p>
+      </div>
     </div>
-    <div class="col-lg-6 extra-margin">
-      <h3>Prezentační web</h3>
-      <a href="index.html"><img class="img-responsive" id="portfolio-obrazek-work"src="img/portfolio/web1.png" alt=""/></a>
-      <p>Tyto své stránky považuji také za projekt, jelikož jsem se na něm naučil HTML/CSS a Bootstrap.</p>
-  </div>
-      <!-- /row -->
-</div>
-  <div class="row mt centered ">
-  <div class="col-lg-6 extra-margin">
-    <h3>Landing page pro živnostníka</h3>
-    <a href="https://paulicz44.github.io/LandingPageProject/index.html"><img class="img-responsive" id="portfolio-obrazek-work"src="img/portfolio/web-lakta.png" alt=""/></a>
-    <p>Tento web jsem vytvořil pro kamarádku, která pracuje jako laktační poradkyně. Web momentáně není dokončený, chybí tam skutečné informace od kamarádky, 
-      ale web je připraven k použití. Vytvořil jsem ho za použití čistého HTML/CSS a s pomocí frameworku Skeleton. Skeleton je velmi malý framework a použil jsem ho hlavně kvůli responzivnímu grid systému.
-     Projekt je dočasně umístěn na mém  <a href="https://paulicz44.github.io/LandingPageProject/index.html" >githubu.</a> </p>
-</div>
-<div class="col-lg-6 extra-margin">
-  <h3>Jednostrnákový formulář</h3>
-  <a href="https://codepen.io/PauliCZ44/full/XWXWVeO"><img class="img-responsive" id="portfolio-obrazek-work"src="img/portfolio/web-form.png" alt=""/></a>
-  <p>Projekt vytvořený na procvičení stylování formuláře. Nakódovaný v čistém CSS a HTML bez použití frameworků. Je to cvičný projekt, takže odeslání formuláře nefunguje :)
-     Odkaz je na <a href="https://codepen.io/PauliCZ44/full/XWXWVeO">codepen.io</a> kde je dostupný i zdrojový kód.</p>
-</div>
     <!-- /row -->
-</div>
-
-<div class="row mt centered">
-<div class="col-lg-4 col-sm-6 col-lg-offset-4 col-sm-offset-3">
-  <h3>Palindrom checker </h3>
-  <a href="https://paulicz44.github.io/LandingPageProject/work05.html"><img class="img-responsive" id="portfolio-obrazek-work"src="img/portfolio/palindrom.png" alt=""/></a>
-  <p> První ze série mini-projektů z FCC. Zadání znělo vytvořit funkci, která zjistí jestli je zadané slovo palindrom. Funkci jsem následně implementoval na svůj web pomocí vanilla JS</p>
-</div>
-
-
-  <!-- /row -->
-</div>
+  </div>
   <!-- /container -->
-    </div>
 
     <!-- +++++ Footer Section +++++ -->
 
     <div id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-sm-6 col-xs-6">
+      <!--    <div class="col-lg-4">
+            <h4>My Bunker</h4>
+            <p>
+              Some Address 987,<br/> +34 9054 5455, <br/> Madrid, Spain.
+            </p>
+          </div> -->
+          <!-- /col-lg-4 -->
+
+          <div class="col-sm-6 col-xs-3">
             <h4 id="kontakt">Odkazy</h4>
             <p>
               <a href="https://www.facebook.com/pavel.stastny.9"> <img class="SSicon"src="img/FBlogo.png"  alt="FB-Icon"></a><a href="https://www.facebook.com/pavel.stastny.9"> Facebook  </a><br>
                 <a href="https://is.muni.cz/osoba/433999"> <img class="SSicon"src="img/muni.jpg"  alt="Muni-Icon"></a><a href="https://is.muni.cz/osoba/433999"> IS MUNI</a><br>
               <a href="https://www.linkedin.com/in/pavel-stastny-155539150"> <img class="SSicon" src="img/INlogo.png" alt="IN-Icon"></a><a href="https://www.linkedin.com/in/pavel-stastny-155539150"> LinkedIn</a>   <br><br>
-              Moje CV: <a href="Životopis2020.pdf" download="PavelŠťastný" target="_blank"> DOWNLOAD! </a><br>
-               <span class="glyphicon-envelope"></span> &#115;<!-- >totojeblblej@seznam.cz -->&#116;&#97;&#115;<!-- >ahhjh@sdf.sdc -->&#116;&#110;&#121;&#112;<!-- >@. -->&#64;<!-- >wdadsa@ssasd.cz -->&#115;&#101;&#122;<!-- >@. -->&#110;&#97;<!-- >@. -->&#109;&#46;<!-- >@. -->&#99;<!-- >@. -->&#122;
+              Moje CV: <a href="Životopis2020.pdf" download="PavelŠťastný" target="_blank"> DOWNLOAD! </a>
             </p>
           </div>
           <!-- /col-lg-4 -->
 
-          <div class="col-lg-6 col-sm-6 col-xs-6">
+          <div class="col-sm-6 col-xs-9">
             <h4>O této stránce</h4>
             <p>Tuto prezentační stránku jsem začal vytvářet 01.04.2020. Vznikla kvůli tomu, abych si vyzkoušel vytvořit první web,
               umístit ho na internet atd. Je vytvořená pomocí HTML/CSS technologie s malým využitím bootstrap frameworku.
@@ -135,7 +120,7 @@
     <div id="copyrights">
       <div class="container" >
         <p>
-          &copy; Copyright 2020  Pavel Šťastný.  All Rights Reserved. 
+          &copy; Copyright 2020  Pavel Šťastný.  All Rights Reserved.
         </p>
         </div>
       </div>
@@ -150,6 +135,10 @@
 
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
+    
+    <!-- Javascript Project Files -->
+    <script src="js/palindrome.js"></script>
 
   </body>
+
   </html>
