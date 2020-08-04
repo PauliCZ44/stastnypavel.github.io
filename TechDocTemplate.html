@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang='cs'>
+
+<head>
+	<title>Tech Documentatin Page Test</title>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name='description' content=''>
+	<meta name='keywords' content='Technical Document'>
+	<meta name='author' content='Pauli'>
+	<meta name='robots' content='all'>
+	<!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+	<link href='https://www.shareicon.net/data/256x256/2016/09/09/827545_document_512x512.png' rel='shortcut icon' type='image/png'>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+</head>
+<style>
+	body {
+		margin: 0 0 0 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	section header {
+		border: 1px solid #add8e6;
+		border-radius: 5px;
+		background-color: rgba(250, 250, 224, 0.849);
+	}
+
+	small {
+		font-style: italic;
+	}
+
+	#mainHeader {
+		margin: none;
+		grid-area: header;
+		background-color:#1565c0;
+		color: #FFF
+	}
+
+	#mainContent {
+		grid-area: main;
+		background-color: #fff;
+		margin: 0 3px 0 0;
+		overflow-y: scroll;
+	}
+
+	#navbar {
+		grid-area: nav;
+		background-color: #f0fbff;
+		margin: 0;
+		overflow-y: auto;
+
+	}
+
+	#mainFooter {
+		grid-area: foot;
+		background-color: #062240;
+		height: 5px;
+		padding: 2px 10px 10px 10px;
+		font-size: 0.6rem;
+		text-align: center;
+	}
+
+	#mainFooter a{
+		padding-left: 10px;
+	}
+
+
+	#main-doc {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: minmax(0, 1fr);
+		grid-template-areas:
+			"header"
+			"nav"
+			"main"
+			"main"
+			"main"
+			"foot";
+		height: 100vh;
+  		width: 100vw;
+	}
+	
+
+	@media (min-width: 600px) {
+		#main-doc {
+			grid-gap: 0px;
+			grid-template-areas:
+				"header header"
+				"nav main"
+				"nav main"
+				"foot foot";
+			grid-template-columns: minmax(200px, 20%) minmax(70%, 80%);
+			grid-template-rows: auto-fill 1fr 1fr 40px;
+		}
+
+		
+	#navbar {
+		position: sticky;
+	}
+
+	}
+
+	nav header {
+		color: #1565c0;
+		margin: 0.1em;
+		padding: 0.1em;
+		height: 1.6rem;
+		text-align: center;	
+	}
+	nav header h5 {
+		color: #1565c0;
+		margin: 0.1em;
+		padding: 0.1em;
+		text-align: center;	
+	}
+
+	nav ul {
+		color: black;
+	}
+
+	nav ul li a, nav ul li {
+		margin: 3px;
+		padding: 0;
+	}
+
+.footerText:hover {
+  text-decoration-style: dotted;
+  color: #1565c0;
+  text-decoration: solid dotted white;
+};
+
+
+
+</style>
+</head>
+
+<body>
+	<main id="main-doc">
+		<header id="mainHeader">
+			<h2>Technical documentation page template</h2>
+		</header>
+		<nav id="navbar">
+			<header><h5>Navbar</h5></header>
+			<ul>
+				<li> <a href="#About_This_Project" class="nav-link">About This Project</a> </li>
+				<li> <a href="#Main_H3_Section_A" class="nav-link">Main H3 Section A</a> </li>
+				<li> <a href="#Main_H3_Section_B" class="nav-link">Main H3 Section B</a> </li>
+				<li> <a href="#Main_H3_Section_C" class="nav-link">Main H3 Section C</a> </li>
+				<li> <a href="#Main_H3_Section_D" class="nav-link">Main H3 Section D</a> </li>
+				<li> <a href="#Main_H3_Section_E" class="nav-link">Main H3 Section E</a> </li>
+				<li> <a href="#Main_H3_Section_F" class="nav-link">Main H3 Section F</a> </li>
+			</ul>
+			 Next Section
+			<ul>
+				<li>Item1</li>
+				<li>Item2</li>
+				<li>Item3</li>
+			</ul>
+		</nav>
+
+		<section id="mainContent">
+			<section class="main-section" id="About_This_Project">
+				<header id=">About_This_ProjectH">
+					<h3>About This Project</h3>
+				</header>
+				<h3><small>What is this and why did I make it?</small></h3>
+				<p>This is a simple project for <a href="https://www.freecodecamp.org/paulicz44" target="blank">Freecodecamp's</a> <em>Responsive Web Design Projects</em> certification. With this project and other 4 projects I acquired this certification. In this project I used <a href="https://minicss.org/">minicss</a> css framework (mainly for typography). I used grid-template-areas for layout. All css was coded by me manualy. Layout is made in two versions: mobile and desktop. 
+				</p>
+				<p>This page can be used as a simple template for technical documentation. This tepmlate can be improved with adding JavaScript for examle for navbar. Maybe i will make it in the future if I have more free time :)</p>
+				<h4>You can copy this template as you wish and I would be very happy if you cite me as a co-author (or contributor). Thank You.</h4>
+			</section>
+			<section class="main-section" id="Main_H3_Section_A">
+				<header id=">Main_H3_Section_AH">
+					<h3>Main H3 Section A</h3>
+				</header>
+				<h3><small>Subheader</small></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamc</p>
+			</section>
+
+			<section class="main-section"  id="Main_H3_Section_B">
+				<header id="Main_H3_Section_BH">
+					<h3>Main H3 Section B</h3>
+				</header>
+				<h3><small>Subheader</small></h3>
+
+				<p> LoremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore <code> This == code </code> et dolore magna aliqua.</p>
+				<pre>&lt;link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css"&gt;<br>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"&gt;</pre>
+				<p>This a end of <code>pre</code> paragraph.</p>
+			</section>
+
+			<section class="main-section"  id="Main_H3_Section_C">
+				<header id="Main_H3_Section_CH">
+					<h3>Main H3 Section C</h3>
+				</header>
+				<h3><small>Subheader</small></h3>
+
+				<p> LoremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore <code> This == code </code> et dolore magna aliqua.</p>
+				<pre>&lt;link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css"&gt;<br>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"&gt;</pre>
+				<p>This a end of <code>pre</code> paragraph.</p>
+
+			</section>
+
+			<section class="main-section"  id="Main_H3_Section_D">
+				<header id="Main_H3_Section_DH">
+					<h3>Main H3 Section D</h3>
+				</header>
+				<h3><small>Subheader</small></h3>
+
+				<p> Example of code: <code> This == code </code>.</p>
+				<p> This is inception of <code>pre</code> element </p>
+				<pre>&lt;p&gt; LoremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore &lt;code&gt; This == code &lt;/code&gt; et dolore magna aliqua.&lt;/p&gt;
+&lt;pre&gt;&amp;lt;link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css"&amp;gt;&lt;br&gt;
+&amp;lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"&amp;gt;&lt;/pre&gt;
+&lt;p&gt;This a end of &lt;code&gt;pre&lt;/code&gt; paragraph.&lt;/p&gt;</pre>
+				<p>This a end of <code>pre</code> paragraph.</p>
+			</section>
+
+			<section class="main-section"  id="Main_H3_Section_E">
+				<header id="Main_H3_Section_EH">
+					<h3>Main H3 Section E</h3>
+				</header>
+				<h3><small>Subheader</small></h3>
+				<p> LoremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore <code> This == code </code> et dolore magna aliqua.</p>
+				<pre>&lt;link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css"&gt;<br>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"&gt;</pre>
+				<p>This a end of <code>pre</code> paragraph.</p>
+			</section>
+
+			<section class="main-section"  id="Main_H3_Section_F">
+				<header id="Main_H3_Section_FH">
+					<h3>Main H3 Section F</h3>
+				</header>
+				<h3><small>Subheader</small></h3>
+				<p> LoremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore <code> This == code </code> et dolore magna aliqua.</p>
+				<pre>&lt;link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css"&gt;<br>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"&gt;</pre>
+				<p>This a end of <code>pre</code> paragraph.</p>
+				<h6>List example:</h6>
+				<ul>
+					<li>First</li>
+					<li>Second</li>
+					<li>Third</li>
+					<li>Fourth</li>
+					<li>Fifth</li>
+				</ul>
+			</section>
+
+			<!-- End  of main section -->
+		</section>
+
+		<footer id="mainFooter">
+			© 2020 Pavel Šťastný   <a id="info"  class="footerText" href="https://paulicz44.github.io/stastnypavel.github.io/index.html">If you find a bug, please contact me.</a>
+		   <a href="https://www.freecodecamp.org/paulicz44" target="blank" class="footerText"> FCC profile </a> 
+		   <a href="https://paulicz44.github.io/stastnypavel.github.io/index.html" target="blank" class="footerText"> My Github</a> 
+		</footer>
+
+	</main>
+</body>
+
+</html>
+
+<!-- 
+Structure:
+//////////////MAIN HEADING////////////////
+NAVIGATION			Content
+[i]CSS		│	Content text
+//1			│		<h1></h1>
+//2			│		<h3></h3>
+//3			│		<p></p>
+[i]HTML 	│		<code></code>
+//1			│		<p></p>
+//2			│		<ul>
+//3			│			<li></li>
+[i]JS		│			<li></li>
+//1			│		</ul>	
+//2			│
+//3			│		
+//button for│
+show/hide 	│
+nav bar		│
+////////////////FOOTER/////////////////////
