@@ -513,3 +513,8 @@ bt {
   font-size: 8px;
   color: #262626;
 }
+
+.downloadBtn {
+  background-color: #172970;
+  color: black;
+}
