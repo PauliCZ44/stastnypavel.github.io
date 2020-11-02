@@ -21,10 +21,38 @@
 		overflow: hidden;
 	}
 
+	/* SCROLL BAR STYLES */
+	section::-webkit-scrollbar {
+  width: 0.75em;
+	}
+	nav::-webkit-scrollbar {
+  width: 0.55em;
+	}
+
+	section::-webkit-scrollbar-thumb:horizontal:hover,section::-webkit-scrollbar-thumb:vertical:hover {
+			 background-color: #4a75a5;
+			 border: 1px solid #4a75a5;
+	}
+	section::-webkit-scrollbar-thumb:horizontal:active,section::-webkit-scrollbar-thumb:vertical:active {
+			 background-color: #4a75a5; 
+	}
+
+	section::-webkit-scrollbar-track, nav::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+	}
+ 
+	section::-webkit-scrollbar-thumb, nav::-webkit-scrollbar-thumb {
+		background-color: #607ea0;
+		border-radius: 10px;
+	}
+	 /* SCROLL BAR STYLES  END */
+	 
 	section header {
-		border: 1px solid #add8e6;
+		margin: 2em 0 1.5em 0;
+		border: 1px solid #6681a7a6;
 		border-radius: 5px;
-		background-color: rgba(250, 250, 224, 0.849);
+		background-color: #d0dbe9a6;
+		color: #101010
 	}
 
 	small {
@@ -35,7 +63,9 @@
 		margin: none;
 		grid-area: header;
 		background-color:#1565c0;
-		color: #FFF
+		color: #FFF;
+		padding-top: 0.5em;
+		padding-bottom: 1em;
 	}
 
 	#mainContent {
@@ -43,14 +73,16 @@
 		background-color: #fff;
 		margin: 0 3px 0 0;
 		overflow-y: scroll;
+		padding: 0 2em 2em 2em;
 	}
 
 	#navbar {
 		grid-area: nav;
-		background-color: #f0fbff;
+		background-color: #fbfdff;
 		margin: 0;
 		overflow-y: auto;
-
+		overflow-y: scroll;
+		position: sticky;
 	}
 
 	#mainFooter {
@@ -95,11 +127,6 @@
 			grid-template-rows: auto-fill 1fr 1fr 40px;
 		}
 
-		
-	#navbar {
-		position: sticky;
-	}
-
 	}
 
 	nav header {
@@ -110,26 +137,35 @@
 		text-align: center;	
 	}
 	nav header h5 {
-		color: #1565c0;
+		color: #062240;
 		margin: 0.1em;
 		padding: 0.1em;
 		text-align: center;	
 	}
 
 	nav ul {
+		padding: 0 0 0 8px;
+		margin: 0;
 		color: black;
+		list-style-image:none;
 	}
 
 	nav ul li a, nav ul li {
 		margin: 3px;
-		padding: 0;
+		padding: 0.05em;
+		color: rgb(4, 4, 32)!important;
+		font-weight: 400;
+		font-size: 1.1em
 	}
+
+
 
 .footerText:hover {
   text-decoration-style: dotted;
   color: #1565c0;
   text-decoration: solid dotted white;
 };
+
 
 
 
@@ -142,7 +178,7 @@
 			<h2>Technical documentation page template</h2>
 		</header>
 		<nav id="navbar">
-			<header><h5>Navbar</h5></header>
+			<header><h5>Main section</h5></header>
 			<ul>
 				<li> <a href="#About_This_Project" class="nav-link">About This Project</a> </li>
 				<li> <a href="#Main_H3_Section_A" class="nav-link">Main H3 Section A</a> </li>
@@ -152,11 +188,11 @@
 				<li> <a href="#Main_H3_Section_E" class="nav-link">Main H3 Section E</a> </li>
 				<li> <a href="#Main_H3_Section_F" class="nav-link">Main H3 Section F</a> </li>
 			</ul>
-			 Next Section
+			 <header><h5>Next Section</h5></header>
 			<ul>
-				<li>Item1</li>
-				<li>Item2</li>
-				<li>Item3</li>
+				<li><a href="#">Item1</a> </li>
+				<li><a href="#">Item1</a> </li>
+				<li><a href="#">Item1</a> </li>
 			</ul>
 		</nav>
 
@@ -165,7 +201,7 @@
 				<header id=">About_This_ProjectH">
 					<h3>About This Project</h3>
 				</header>
-				<h3><small>What is this and why did I make it?</small></h3>
+				<h4>Subheader</h4>
 				<p>This is a simple project for <a href="https://www.freecodecamp.org/paulicz44" target="blank">Freecodecamp's</a> <em>Responsive Web Design Projects</em> certification. With this project and other 4 projects I acquired this certification. In this project I used <a href="https://minicss.org/">minicss</a> css framework (mainly for typography). I used grid-template-areas for layout. All css was coded by me manualy. Layout is made in two versions: mobile and desktop. 
 				</p>
 				<p>This page can be used as a simple template for technical documentation. This tepmlate can be improved with adding JavaScript for examle for navbar. Maybe i will make it in the future if I have more free time :)</p>
@@ -175,7 +211,7 @@
 				<header id=">Main_H3_Section_AH">
 					<h3>Main H3 Section A</h3>
 				</header>
-				<h3><small>Subheader</small></h3>
+				<h4>Subheader</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamc</p>
@@ -185,7 +221,7 @@
 				<header id="Main_H3_Section_BH">
 					<h3>Main H3 Section B</h3>
 				</header>
-				<h3><small>Subheader</small></h3>
+				<h4>Subheader</h4>
 
 				<p> LoremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore <code> This == code </code> et dolore magna aliqua.</p>
@@ -198,7 +234,7 @@
 				<header id="Main_H3_Section_CH">
 					<h3>Main H3 Section C</h3>
 				</header>
-				<h3><small>Subheader</small></h3>
+				<h4>Subheader</h4>
 
 				<p> LoremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore <code> This == code </code> et dolore magna aliqua.</p>
@@ -212,7 +248,7 @@
 				<header id="Main_H3_Section_DH">
 					<h3>Main H3 Section D</h3>
 				</header>
-				<h3><small>Subheader</small></h3>
+				<h4>Subheader</h4>
 
 				<p> Example of code: <code> This == code </code>.</p>
 				<p> This is inception of <code>pre</code> element </p>
@@ -228,7 +264,7 @@ tempor incididunt ut labore &lt;code&gt; This == code &lt;/code&gt; et dolore ma
 				<header id="Main_H3_Section_EH">
 					<h3>Main H3 Section E</h3>
 				</header>
-				<h3><small>Subheader</small></h3>
+				<h4>Subheader</h4>
 				<p> LoremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore <code> This == code </code> et dolore magna aliqua.</p>
 				<pre>&lt;link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css"&gt;<br>
@@ -240,7 +276,7 @@ tempor incididunt ut labore &lt;code&gt; This == code &lt;/code&gt; et dolore ma
 				<header id="Main_H3_Section_FH">
 					<h3>Main H3 Section F</h3>
 				</header>
-				<h3><small>Subheader</small></h3>
+				<h4>Subheader</h4>
 				<p> LoremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore <code> This == code </code> et dolore magna aliqua.</p>
 				<pre>&lt;link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css"&gt;<br>
