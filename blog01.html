@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
   <meta charset="utf-8">
   <title>Pavel Šťastný</title>
@@ -12,13 +13,14 @@
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Sen&display=swap" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -28,14 +30,14 @@
 <body>
 
   <!-- Static navbar -->
-  <div class="navbar navbar-inverse navbar-static-top">
+  <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <a class="navbar-brand" href="index.html">Pavel Šťastný</a>
       </div>
       <div class="navbar-collapse collapse">
@@ -48,80 +50,136 @@
       </div>
       <!--/.nav-collapse -->
     </div>
-  </div>
+  </nav>
 
 
   <!-- +++++ Post +++++ -->
-  <div id="white">
+  <main id="white" style="padding-top: 0.8em; padding-bottom: 1qm;">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-  <img id="profilovy-obrazek" src="img/user.png" alt="Pavel">
-          </p>
+        <article class="col-lg-8 col-lg-offset-2" style="text-align:  justify;">          
+          <h1 class="pt-3">O kurzu Full stack open 2020</h1>
+          <p><img class="img-responsive blog-img-main" src="img/blog/FSOpen2020.png"
+              alt="Full Stack Open 2020 ilustration">
+          <bd><small>Stránka z kurzu s obsahem. <a href="https://fullstackopen.com/en/#course-contents">Zdroj.</a></small></bd>
+            </p>
+          <h3 class="p-top">Proč jsem začal kurz</h3>
+          <p>Po dokončení třech prvních částí na freecodecamp, kde jsem se naučil responzivní web designu a základy JS, jsem hledal další místo, kde bych se mohl rozvíjet. Podle <a href="https://github.com/P1xt/p1xt-guides"  target="_blank">P1Xt</a> a dlouhém zvažování "do čeho se pustit", jsem pokračoval tímto kurzem. Zaujal mě tech-stack, kterému jsem se chtěl věnovat, a taky forma výuky. Látka je probrána do podrobna a vysvětluje všechnu "magii" co se děje pod povrchem. Zaujala mě ale i šířka do jaké má kurz rozsah. Od frontendu po backend.</p>
+          <h4>Prerekvizity kurzu</h4>
+          <p>Na stránkách kurzu se dočteme:</p>
+          <blockquote style="font-size: 1em;">
+            "Participants are expected to have good programming skills, basic knowledge of web programming and
+            databases, and mastery of basic use of the Git version management system. You are also expected to have
+            perseverance and a capacity for solving problems and seeking information independently"
+          </blockquote>
           <p>
-            <bd>January 3, 2014</bd>
+          V počátcích kurzu jsem si musel doplňovat znalosti o JS. Později už šlo všechno hladce. Dobrý základ JS je důležitý, aby člověk rozlišil, co dělá framework, a co je čistý JS.
           </p>
-          <h4>An Image Post</h4>
-          <p><img class="img-responsive" src="img/blog01.jpg" alt=""></p>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-          <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          <br>
+          <h3>Co jsem se naučil</h3>
+          <p>
+          Já jsem v kurzu dokončil zatím 6 částí, tedy kapitoly 0 až 6. Viz obrázek výše. Podle tohoto popisu se dá lehce zjistit, jaký cíl si autoři kurzu vzali za svůj:
+          </p>
+          <blockquote style="font-size: 1em;">
+            "Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.. ... Other topics include debugging applications, configuration, managing runtime environments and NoSQL
+            databases."
+          </blockquote>
+          <p>
+          Kurz se z počátku soustředí na programování s reactem, později přidává programování na backendu v node.js a pak se to všechno spojuje do jedné aplikace. Kromě programování je kladen důraz na práci s GITem. Přes github se odevzdávají jednotlivá cvičení. Repo se pak postne do odevzdávacího systému, a odpovědi už se potom nedají měnit. 
+          </p>
+
+          <h4> Kapitola 0 – Fundamentals of Web apps</h4>
+          <p>Úvodní kapitola vysvětluje  způsob práce v kurzu, odevzdávání cvičení a jiné informace. První cvičení spočívá ve vytvoření schématu, které vysvětluje, jak komunikuje klient se  serverem. Probírány jsou síťové protokoly, DOM, a taky práce s konzolí. Kapitola je dobrým úvodem do vývoje webových aplikací. </p>
+          <h4>Kapitola 1 – Introduction to React</h4>
+          <p>Začalo přitvrzovat. Kapitola 1 se začala věnovat komplexnějším problémům. Začíná se seznamováním s reactem (JSX, props, teorie komponent) pak pokračuje "připomínací" podkapitolou o JS. V této podkapitole se velmi často odkazuje na jiné zdroje, které jsou vžd velmi pečlivě vybrané. Po úvodu do reactu a zopakování JS, je probírán "component state", předávání props do komponent event handlig aj. Cvičení je rozděleno na tři maličké aplikace, které si ale musí člověk napsat "from scratch". Kapitola je výborným úvodem do reactu, učí do hloubky a všechno je vysvětleno. Ve cvičeních je kladen důraz na pochopení toho, jak funguje React.</p>
+          <h4>Kapitola 2 – Communicating with server</h4>
+          <p>Kapitola hezky navazuje na předchozí. Pokračuje se v Reactu. Rendrování seznamů, a jiných dat. Poté je probíráno odesílání dat na server a získávání dat ze serveru. Pro komunikaci se serverem je představen <a href="https://github.com/axios/axios">axios</a>.  S ním souvisí první setkání s "promises". Další dobrá utilitka je <a href="https://github.com/typicode/json-server">json-server</a>. Ten poslouží jako fake REST API v začátcích. Pro pochopeí principů je to velmi vhodné, protože JSON server nevyžaduje složité nastavení.</p>
+          <h4>Kapitola 3 – Programming a server with NodeJS and Express </h4>
+          <p>V této části jsem se setkal poprvé s programováním na backendu. Pomocí node.js a knihovny <a href="http://expressjs.com/">Express</a>. Cvičení se zaměřila na zpracování síťových požadavků na serveru. Další část kapitoly se zabývala zpracováním dat v <a href="https://www.mongodb.com/">MongoDB</a>, což je NoSQL dokumentová databáze. Také jsem poprvé provedl deploy aplikace na službu  <a href="https://www.heroku.com/">Heroku</a>. V rámci kapitoly jen backendovou část.</p>
+          <h4>Kapitola 4 – Testing Express servers, user administration</h4>
+          <p>Tato kapitola mi trvala nejdéle ze všech (zatím). Byl jsem vytížený v osobním životě a časté odkládání a vracení se k obsahu látky nebylo dobrou strategií. Někdy jsem se musel vracet k jednotlivým tématům i vícekrát. Možná byl problém i v tom, že to, co uděláte v této kapitole není navenek vůbec vidět. Testování aplikace mě ale velmi bavilo, psaní testů bylo hodně o javascriptu a algroritmech. To považuju za jeden z přínosů této kapitoly. Pro testování je použita knihovna <a href="https://jestjs.io/">Jest</a>, vyvýjená Facebookem. Implementoval jsem unit a integration testy pro backend. Po napsání testů byl vývoj v backendu rychlejší a nemuselo se tolik testovat přes <a href="https://github.com/Huachao/vscode-restclient"> REST Client </a>(což mimo jiné doporučuju pro VSCode, jako dobré rozšíření pro základní testování)</p> <p>Po testování jsem se naučil jak implementovat uživatelské ověřování na backendu pomocí token authentication (<a href="https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication#toc-how-token-based-works">vysvětlení na scoth.io</a>). Pro mě velká novinka, ale velmi důležitá. Použil jsem knihovnu <a href="https://github.com/auth0/node-jsonwebtoken">jsonwebtoken</a>. Pro šifrování hesel jsem využil <a href="https://github.com/kelektiv/node.bcrypt.js">bcrypt</a>. Získal jsem zde i nějaké základní poznatky o kryptografii. Kapitola byla celkově velmi obsáhlá, zdlouhavá, ale zato velmi zajímavá a neskutečně přínosná.</p>
+          <h4>Kapitola 5 – Testing React apps</h4>
+          <p>Návrat k frontendu (konečně). TO co se udělalo na bacnekdu se v kapitole implementuje na frontend. Po delší době opět práce v reactu. Bylo nutné se naučit asynchronní  požadavky. K tomu jsem používal z počátu .then příkazy, následně se však v kurzu představila syntaxe s async/await která se mi líbí víc, tak jsem ji začal používat. Implementoval jsem login a následně i registraci na FE. Z cvičného projektu jsem udělal <a href="/work#BlogsApp">publikovaný</a> projekt. Práce navíc se však myslím vyplatila. Dokonce jsem musel přeskočit na kapitolu 7, kde se probíralo stylování aplikace. </p><p>
+          Druhá část páté kapitoly se zabývá testování FE s pomocí Jestu a <a href="https://github.com/testing-library/react-testing-library">react-testing-library</a>. Implementoval jsem unit testy na FE. Pro E2E testy byla použita moderní knihovna <a href="https://www.cypress.io/">Cypress</a>.
+          </p>
+          <h3>Celkový dojem z dosud dodělaných kapitol</h3>
+          <p>Když porovnám svoje znalosti v době, kdy jsem kurz začal a svoje znalosti teď, je zde propastný rozdíl. Kurz je velmi dobrý v tom, jak učí věci do hloubky, ale zároveň do šířky. Všechno je vysvětleno velmi přesně a pochopitelně. Cvičení mohou být někdy depresivní v tom, že pokud se zaseknete, nemá vám kdo poradit. Nenašel jsem žádné medium, kde by se daly zjistit odpovědi (např. discord, reddit aj.) Možným řešením je prohledávat github, ale čtením cizího kódu se nemusíte dopátrat k řešení problému. Kurz obsahuje dobrovolná cvičení, které jsem, až na jedno, zvládl. Na tom jednom jsem se zasekl na opravdu dlouho, a protože jsem se těšil na kapitolu 5, nedodělal jsem ho. Na konci jste ohodnocení podle počtu odevzdaných cvičení, do kterých se započítavají i dobrovolná cvičení. Motivace k dělání dobrovoných cvieční však spočívá hlavně v lepším porozumění látce.</p>
+          </p>
+
+          <hr>
+
+          <a href="blog.html"> <button class="btn btn-lg"><span class="glyphicon glyphicon-backward"
+                style="font-size: 15px;" aria-hidden="true"></span> Zpět</button> </a>
+          <p><br></p>
           <p>
             <bt>TAGS: WebDev</bt>
           </p>
-          <hr>
-          <p><a href="blog.html"># Back</a></p>
-        </div>
+        </article>
 
       </div>
       <!-- /row -->
     </div>
     <!-- /container -->
-  </div>
+  </main>
   <!-- /white -->
 
   <!-- +++++ Footer Section v1.03 +++++ -->
 
-  <div id="footer">
+  <footer id="footer">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-sm-6 col-xs-6">
           <h4 id="kontakt">Odkazy</h4>
           <p>
-            <a href="https://www.facebook.com/pavel.stastny.9" target="_blank"> <img class="SSicon"src="img/FBlogo.png"  alt="FB-Icon"></a><a href="https://www.facebook.com/pavel.stastny.9"> Facebook  </a><br>
-              <a href="https://is.muni.cz/osoba/433999" target="_blank"> <img class="SSicon"src="img/muni.jpg"  alt="Muni-Icon"></a><a href="https://is.muni.cz/osoba/433999"> IS MUNI</a><br>
-            <a href="https://www.linkedin.com/in/pavel-stastny-155539150" target="_blank"> <img class="SSicon" src="img/INlogo.png" alt="IN-Icon"></a><a href="https://www.linkedin.com/in/pavel-stastny-155539150"> LinkedIn</a>   <br>
-            <a href="https://www.freecodecamp.org/paulicz44" target="_blank"> <img class="SSicon" src="img/FCCIcon.png" alt="FCC-Icon"></a><a href="https://www.freecodecamp.org/paulicz44"> FCC profil</a>   <br>
-            <a href="https://github.com/PauliCZ44" target="_blank"> <img class="SSicon" src="img/GitLogo.png" alt="Git Hub Icon"></a><a href="https://github.com/PauliCZ44"> Git Hub</a>   <br>
+            <a href="https://www.facebook.com/pavel.stastny.9" target="_blank"> <img class="SSicon" src="img/FBlogo.png"
+                alt="FB-Icon"></a><a href="https://www.facebook.com/pavel.stastny.9"> Facebook </a><br>
+            <a href="https://is.muni.cz/osoba/433999" target="_blank"> <img class="SSicon" src="img/muni.jpg"
+                alt="Muni-Icon"></a><a href="https://is.muni.cz/osoba/433999"> IS MUNI</a><br>
+            <a href="https://www.linkedin.com/in/pavel-stastny-155539150" target="_blank"> <img class="SSicon"
+                src="img/INlogo.png" alt="IN-Icon"></a><a href="https://www.linkedin.com/in/pavel-stastny-155539150">
+              LinkedIn</a> <br>
+            <a href="https://www.freecodecamp.org/paulicz44" target="_blank"> <img class="SSicon" src="img/FCCIcon.png"
+                alt="FCC-Icon"></a><a href="https://www.freecodecamp.org/paulicz44"> FCC profil</a> <br>
+            <a href="https://github.com/PauliCZ44" target="_blank"> <img class="SSicon" src="img/GitLogo.png"
+                alt="Git Hub Icon"></a><a href="https://github.com/PauliCZ44"> Git Hub</a> <br>
           </p>
         </div>
         <!-- /col-lg-4 -->
         <div class="col-lg-9 col-sm-6 col-xs-6">
           <h4>O této stránce</h4>
-          <p>Tuto prezentační stránku jsem začal vytvářet 01.04.2020. Vznikla kvůli tomu, abych si vyzkoušel vytvořit první web,
-            umístit ho na internet a přidat zde některé své projekty. Je vytvořená pomocí HTML/CSS technologie s malým využitím bootstrap frameworku.
+          <p>Tuto prezentační stránku jsem začal vytvářet 01.04.2020. Vznikla kvůli tomu, abych si vyzkoušel vytvořit
+            první web,
+            umístit ho na internet a přidat zde některé své projekty. Je vytvořená pomocí HTML/CSS technologie s malým
+            využitím bootstrap frameworku.
           </p>
         </div>
         <div class="col-lg-3 col-sm-6 col-xs-9">
           <p>
-            Moje CV:  <span style = "margin-left: 7px"><a href="Životopis2020.pdf" download="PavelŠťastný" target="_blank" class="btn btn-xs downloadBtn" role="button"> DOWNLOAD! </a> </span><br>
-             <span class="glyphicon-envelope"></span> &#115;<!-- >totojeblblej@seznam.cz -->&#116;&#97;&#115;<!-- >ahhjh@sdf.sdc -->&#116;&#110;&#121;&#112;<!-- >@. -->&#64;<!-- >wdadsa@ssasd.cz -->&#115;&#101;&#122;<!-- >@. -->&#110;&#97;<!-- >@. -->&#109;&#46;<!-- >@. -->&#99;<!-- >@. -->&#122;
-            </p>
-          </div>
+            Moje CV: <span style="margin-left: 7px"><a href="Životopis2020.pdf" download="PavelŠťastný" target="_blank"
+                class="btn btn-xs downloadBtn" role="button"> DOWNLOAD! </a> </span><br>
+            <span class="glyphicon-envelope"></span> &#115;
+            <!-- >totojeblblej@seznam.cz -->&#116;&#97;&#115;
+            <!-- >ahhjh@sdf.sdc -->&#116;&#110;&#121;&#112;
+            <!-- >@. -->&#64;
+            <!-- >wdadsa@ssasd.cz -->&#115;&#101;&#122;
+            <!-- >@. -->&#110;&#97;
+            <!-- >@. -->&#109;&#46;
+            <!-- >@. -->&#99;
+            <!-- >@. -->&#122;
+          </p>
+        </div>
 
         <!-- /col-lg-4 -->
       </div>
     </div>
-  </div>
+  </footer>
 
   <div id="copyrights">
-    <div class="container" >
+    <div class="container">
       <p>
-        &copy; Copyright 2020  Pavel Šťastný.  All Rights Reserved.
+        &copy; Copyright 2020 Pavel Šťastný. All Rights Reserved.
       </p>
-      </div>
     </div>
+  </div>
   </div>
   <!-- / copyrights -->
 
@@ -133,4 +191,5 @@
   <!-- Main Javascript File -->
   <script src="js/main.js"></script>
 </body>
+
 </html>

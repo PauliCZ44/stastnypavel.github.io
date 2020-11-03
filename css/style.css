@@ -252,6 +252,30 @@ hr {
   padding-bottom: 50px;
 }
 
+.pt-3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.py {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.my {
+  margin-left: 1em;
+  margin-right: 1em;  
+}
+
+.p-top {
+  padding-top: 1em;
+}
+
+.p-btm {
+  padding-bottom: 1em;
+}
+
+
 /* +++++ WRAP SECTIONS +++++ */
 
 #ww {
@@ -291,9 +315,13 @@ color: white;
 /* +++++ Color Wraps / Blog Page +++++ */
 
 #grey {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #f2f2f2;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f0f0f0;
+}
+
+#grey bd, #white bd {
+  color: #979797
 }
 
 #white {
@@ -385,7 +413,6 @@ bt {
   padding: 40px 0;
 }
 
-.contact-form {}
 
 .contact-form label {
   color: #999;
@@ -517,4 +544,20 @@ bt {
 .downloadBtn {
   background-color: #172970;
   color: black;
+}
+
+.blog-img-main {
+  border-radius: 15px;
+}
+
+.img-blog-head {
+  padding: 10px 0px 0px 0;
+}
+
+.blog-post {
+  text-align: justify;
+}
+
+a h3:hover{
+  color: #264de4;
 }
