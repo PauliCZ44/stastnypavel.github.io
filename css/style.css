@@ -561,3 +561,19 @@ bt {
 a h3:hover{
   color: #264de4;
 }
+
+
+#cert-img {
+width: 70% ;
+margin-left: 15%
+}
+
+@media (max-width: 768px ) {
+  #cert-img {
+    width: 96% ;
+    margin-left: 2%
+    }
+}
+
+
+
