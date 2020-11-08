@@ -330,8 +330,12 @@ draw = function() {
         text("Your size: "+LosingSizePlayer+"   Enemy size: "+LosingSizeEnemy,200,245);
         fill (252, 0, 0);
         textFont(f);
-        textSize(60);
+        textSize(40);
         text("PRESS ENTER\nTO TRY AGAIN !!!!",200,330);
+        fill (200, 200, 200);
+        textFont(f);
+        textSize(10);
+        text("Made by Pavel S",350,390)
         //if(keyIsPressed && keyCode === 0){
           //  Program.restart();}
         if (keyIsPressed){
