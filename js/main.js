@@ -1,1 +1,4 @@
-console.log("I deleted jquery :)")
+jQuery(document).ready(function( $ ) {
+
+  
+});
