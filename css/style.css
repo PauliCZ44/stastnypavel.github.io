@@ -1,13 +1,31 @@
 #profilovy-obrazek {
+  cursor: help;
+  transform: rotateZ(0);
+  box-shadow: 0 0 15px 0px black;
   box-sizing: border-box;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  border-radius: 49%;
+  border-radius: 67% 33% 61% 39% / 41% 58% 42% 59% ;
   max-width: 50%;
   height: auto;
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
+
+#profilovy-obrazek:hover {
+  box-shadow: 0 0 25px 0px rgb(38 77 228);
+  border-radius: 38% 62% 49% 51% / 65% 69% 31% 35%;
+}
+
+img#profilovy-obrazek:active {
+  cursor: wait;
+  transform: rotateZ(0);
+  box-shadow: 0 0 25px 0px rgb(100 26 197);
+  animation: 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite rotateZ360 alternate;
+  border-radius: 83% 54% 68% 78% / 99% 69% 78% 48% ;
+}
+
 
 /* CSS HTML S icons */
 #portfolio-obrazek {
@@ -211,7 +229,44 @@ hr {
 .navbar {
   text-transform: uppercase;
   margin-bottom: 0px;
+  background-image: linear-gradient(
+84deg
+, rgba(110, 147, 161, 0.04) 0%, rgba(110, 147, 161, 0.04) 50%,rgba(31, 225, 91, 0.04) 50%, rgba(31, 225, 91, 0.04) 100%),linear-gradient(
+338deg
+, rgba(201, 121, 180, 0.04) 0%, rgba(201, 121, 180, 0.04) 50%,rgba(1, 113, 56, 0.04) 50%, rgba(1, 113, 56, 0.04) 100%),linear-gradient(
+223deg
+, rgba(211, 211, 180, 0.04) 0%, rgba(211, 211, 180, 0.04) 50%,rgba(13, 109, 126, 0.04) 50%, rgba(13, 109, 126, 0.04) 100%),linear-gradient(
+327deg
+, rgba(52, 121, 135, 0.04) 0%, rgba(52, 121, 135, 0.04) 50%,rgba(18, 246, 96, 0.04) 50%, rgba(18, 246, 96, 0.04) 100%),linear-gradient(
+289deg
+, rgba(127, 18, 115, 0.04) 0%, rgba(127, 18, 115, 0.04) 50%,rgba(70, 203, 229, 0.04) 50%, rgba(70, 203, 229, 0.04) 100%),linear-gradient(
+203deg
+, rgba(131, 205, 141, 0.04) 0%, rgba(131, 205, 141, 0.04) 50%,rgba(37, 31, 18, 0.04) 50%, rgba(37, 31, 18, 0.04) 100%),linear-gradient(
+221deg
+, rgba(13, 183, 43, 0.04) 0%, rgba(13, 183, 43, 0.04) 50%,rgba(103, 42, 135, 0.04) 50%, rgba(103, 42, 135, 0.04) 100%),linear-gradient(
+232deg
+, rgba(85, 200, 233, 0.04) 0%, rgba(85, 200, 233, 0.04) 50%,rgba(215, 24, 12, 0.04) 50%, rgba(215, 24, 12, 0.04) 100%),linear-gradient(
+226deg
+, rgba(95, 197, 25, 0.04) 0%, rgba(95, 197, 25, 0.04) 50%,rgba(30, 61, 7, 0.04) 50%, rgba(30, 61, 7, 0.04) 100%),linear-gradient(
+178deg
+, rgba(132, 241, 60, 0.04) 0%, rgba(132, 241, 60, 0.04) 50%,rgba(52, 203, 19, 0.04) 50%, rgba(52, 203, 19, 0.04) 100%),linear-gradient(
+138deg
+, rgba(67, 161, 9, 0.04) 0%, rgba(67, 161, 9, 0.04) 50%,rgba(27, 242, 201, 0.04) 50%, rgba(27, 242, 201, 0.04) 100%),linear-gradient(
+342deg
+, rgba(33, 36, 218, 0.04) 0%, rgba(33, 36, 218, 0.04) 50%,rgba(248, 232, 35, 0.04) 50%, rgba(248, 232, 35, 0.04) 100%),linear-gradient(
+70deg
+, rgba(236, 115, 112, 0.04) 0%, rgba(236, 115, 112, 0.04) 50%,rgba(33, 180, 6, 0.04) 50%, rgba(33, 180, 6, 0.04) 100%),linear-gradient(
+106deg
+, rgba(11, 133, 241, 0.04) 0%, rgba(11, 133, 241, 0.04) 50%,rgba(197, 131, 207, 0.04) 50%, rgba(197, 131, 207, 0.04) 100%),linear-gradient(
+127deg
+, rgb(50,74,241),rgb(7,26,201));
+opacity: 0.95;
+
 }
+
+.navbar:hover {
+}
+
 
 .navbar-inverse {
   padding: 30px 0;
@@ -228,11 +283,14 @@ hr {
 }
 
 .navbar-inverse .navbar-nav > li > a {
+  transition: all 350ms ease-in-out;
   color: white;
+  border-radius: 18% 82% 33% 67% / 58% 32% 68% 42%;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-  color: #222222;
+  background: #00000078;
+  color: #ffffff;
 }
 
 .navbar-brand {
@@ -591,4 +649,40 @@ a h3:hover {
     width: 96%;
     margin-left: 2%;
   }
+}
+
+
+.strong {
+  font-weight: 600;
+}
+
+.technologie {
+  padding-top: 2.5em;
+  font-weight: 600;
+  display: block;
+}
+
+
+@keyframes rotateZ360 {
+  from {
+    transform: scale(0.95);
+  }
+
+  to {
+    transform:  scale(1.35);
+  }
+}
+
+.gradient-bg-center {
+  background-image: radial-gradient(circle at center center, transparent,rgb(255,255,255)),linear-gradient(
+    309deg
+    , rgba(90, 90, 90,0.05) 0%, rgba(90, 90, 90,0.05) 50%,rgba(206, 206, 206,0.05) 50%, rgba(206, 206, 206,0.05) 100%),linear-gradient(
+    39deg
+    , rgba(13,13,13, 0.07) 0%, rgba(13,13,13, 0.07) 50%,rgba(189, 189, 189,0.05) 50%, rgba(189, 189, 189,0.05) 100%),linear-gradient(
+    144deg
+    , rgba(249,249,249, 0) 0%, rgba(249,249,249, 0) 50%,rgba(111, 111, 111,0.05) 50%, rgba(111, 111, 111,0.05) 100%),linear-gradient(
+    166deg
+    , rgba(231, 231, 231,0.05) 0%, rgba(231, 231, 231,0.05) 50%,rgba(220, 220, 220,0.05) 50%, rgba(220, 220, 220,0.05) 100%),linear-gradient(
+    212deg
+    , rgba(80,80,80, 0.09) 0%, rgba(80,80,80, 0.09) 50%,rgba(243, 243, 243,0.05) 50%, rgba(243, 243, 243,0.05) 100%),radial-gradient(circle at center center, hsl(107,19%,100%),hsl(107,19%,100%));
 }
