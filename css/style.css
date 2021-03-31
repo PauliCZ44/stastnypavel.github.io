@@ -14,7 +14,7 @@
 }
 
 #profilovy-obrazek:hover {
-  box-shadow: 0 0 25px 0px rgb(38 77 228);
+  box-shadow: 0 0 25px 0px rgb(38, 77, 228);
   border-radius: 38% 62% 49% 51% / 65% 69% 31% 35%;
 }
 .hero:hover::before {
@@ -35,10 +35,10 @@
   content: "Hold!";
 }
 
-img#profilovy-obrazek:active {
+#profilovy-obrazek:active {
   cursor: wait;
   transform: rotateZ(0);
-  box-shadow: 0 0 25px 0px rgb(100 26 197);
+  box-shadow: 0 0 25px 0px rgb(38, 77, 228);
   animation: 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite rotateZ360 alternate;
   border-radius: 83% 54% 68% 78% / 99% 69% 78% 48% ;
 }
@@ -281,9 +281,6 @@ opacity: 0.95;
 
 }
 
-.navbar:hover {
-}
-
 
 .navbar-inverse {
   padding: 30px 0;
@@ -299,14 +296,16 @@ opacity: 0.95;
   border-color: #16a085;
 }
 
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a,
+.navbar-brand {
   transition: all 350ms ease-in-out;
   color: white;
   border-radius: 18% 82% 33% 67% / 58% 32% 68% 42%;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover {
-  background: #00000078;
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-brand:hover {
+  background: #00000078 !important;
   color: #ffffff;
 }
 
@@ -684,19 +683,21 @@ a h3:hover {
 @keyframes rotateZ360 {
   0% {
     transform: scale(1) rotate(0deg);
-    border-radius: ;
   }
   33% {
     transform: scale(0.9) rotate(-5deg);
     border-radius: 83% 86% 42% 100% / 99% 69% 78% 69% ;
+    box-shadow: 10px 10px 25px 0px rgb(72, 26, 197);
   } 
   66% {
     transform: scale(1.125) rotate(15deg);
     border-radius: 31% 69% 12% 88% / 34% 90% 10% 66%  ;
+    box-shadow: -5px -5px 25px 0px rgb(26, 100, 197);
   }
   100% {
     transform:  scale(1.35) rotate(-15deg);
     border-radius: 18% 82% 17% 83% / 69% 30% 70% 31% ;
+    box-shadow: 5px -12px 25px 0px rgb(22, 149, 158);
   }
 }
 
