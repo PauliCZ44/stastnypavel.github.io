@@ -716,6 +716,43 @@ a h3:hover {
 }
 
 
+
+.typewriter-text {
+  /**/
+  display: inline-block;
+  overflow: hidden;
+  height: 36px;
+  letter-spacing: 1px;
+  animation: typing 6s steps(17, jump-end), blink .75s step-end 25;
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: 700;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  width: 18ch;
+}
+
+@keyframes typing {
+  0% { 
+      width: 0% 
+  }
+  75% {
+      width: 0% 
+  }
+  100% { 
+      width: 18ch
+  }
+}
+
+@keyframes blink {
+  from, to { 
+      border-color: transparent 
+  }
+  50% { 
+      border-color: #333333; 
+  }
+}
+
 /* Animation Animista */
 
 .roll-in-top {
