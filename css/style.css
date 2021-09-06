@@ -680,6 +680,12 @@ a h3:hover {
   display: block;
 }
 
+.note-span {
+  display: block;
+  font-size: 90%;
+  line-height: 20px;
+}
+
 
 @keyframes rotateZ360 {
   0% {
