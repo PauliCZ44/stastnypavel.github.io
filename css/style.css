@@ -814,8 +814,8 @@ a h3:hover {
 /* Animation Animista */
 
 .roll-in-top {
-  -webkit-animation: roll-in-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 100ms both;
-  animation: roll-in-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 100ms both;
+  -webkit-animation: roll-in-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 500ms both;
+  animation: roll-in-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 500ms both;
 }
 
 @-webkit-keyframes roll-in-top {
