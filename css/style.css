@@ -303,6 +303,14 @@ hr {
   margin-bottom: 40px;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
 .pt {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -312,6 +320,8 @@ hr {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+
 
 .py {
   padding-left: 1em;
